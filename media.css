@@ -3,13 +3,13 @@
 
 /* Phone size */
 /* break points */
-@media (max-width:480px){
+@media (max-width:920px){
   .header {
   padding:1.3rem 5%;
 
 }
 }
-@media (max-width:480px) {
+@media (max-width:768px) {
   .icons {
     display: inline-flex;
   }
