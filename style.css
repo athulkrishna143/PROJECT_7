@@ -53,6 +53,7 @@ body {
         color: var(--primary-color);
         cursor: pointer;
         display: none;
+        /* z-index: 1; */
         
   }
 /* >>>>>>>>>>>>>>> */
