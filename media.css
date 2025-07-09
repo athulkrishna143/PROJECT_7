@@ -3,13 +3,22 @@
 
 /* Phone size */
 /* break points */
-@media (max-width:480px){
+@media (max-width:720px) {
+  .hero-image img,
+  .doctor-image img,
+  .video-card {
+    max-width: 90%;
+    display: none;
+  }
+  
+}
+@media (max-width:720px){
   .header {
   padding:1.3rem 5%;
 
 }
 }
-@media (max-width:480px) {
+@media (min-width:50px) and (max-width:720px) {
   .icons {
     display: inline-flex;
   }
@@ -90,17 +99,17 @@
     align-items: center;
     gap: 10px;
   }
-
+/*  */
   .practice-cards,
   .expert-cards,
   .pricing-cards,
   .testimonials-container,
   .footer-columns {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
   }
-
+/*  */
   .card-box,
   .expert-card,
   .pricing-card,
@@ -140,7 +149,7 @@
 }
 
 /* Tablet size */
-@media (min-width: 481px) and (max-width: 768px) {
+/* @media (min-width: 481px) and (max-width: 768px) {
   .header {
     flex-wrap: wrap;
     justify-content: center;
@@ -173,6 +182,7 @@
   .doctor-image img,
   .video-card {
     max-width: 80%;
+    display: none; 
   }
 
   .practice-cards,
@@ -209,7 +219,7 @@
   h2 {
     font-size: 2.5rem;
   }
-}
+} */
 
 /* Laptop size */
 @media (min-width: 769px) and (max-width: 1024px) {
