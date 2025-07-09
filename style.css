@@ -48,7 +48,7 @@ body {
   }
   .icons {
     position: absolute;
-    margin-left:-188px;
+     left: -20%;
         font-size: 1.8rem;
         color: var(--primary-color);
         cursor: pointer;
