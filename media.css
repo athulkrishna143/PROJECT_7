@@ -3,7 +3,7 @@
 
 /* Phone size */
 /* break points */
-@media (max-width:480px) {
+/* @media (min-width:481px) {
   .hero-image img,
   .doctor-image img,
   .video-card {
@@ -98,7 +98,6 @@
     align-items: center;
     gap: 10px;
   }
-/*  */
   .practice-cards,
   .expert-cards,
   .pricing-cards,
@@ -108,13 +107,11 @@
     align-items: center;
     gap: 20px;
   }
-/*  */
   .card-box,
   .expert-card,
   .pricing-card,
   .testimonial-card {
     width: 90%;
-     /* justify-content: center; */
     max-width: 320px;
   }
 
@@ -146,15 +143,15 @@
   h3 {
     font-size: 0.5rem;
   }
-}
+} */
 
-@media (max-width:720px){
+@media (min-width:768px){
   .header {
   padding:1.3rem 5%;
 
 }
 }
-@media (max-width:720px) {
+@media (min-width:0px) and (max-width:768px) {
   .icons {
     display: inline-flex;
   }
@@ -210,6 +207,16 @@
     display: none;
   }
 
+
+  /*  */
+  .container{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+  }
+
+
   .hero-section,
   .doctor-highlight,
   .video-section {
@@ -235,15 +242,22 @@
     align-items: center;
     gap: 10px;
   }
+
+  .footer-columns {
+    justify-content: space-between;
+  }
 /*  */
   .practice-cards,
   .expert-cards,
   .pricing-cards,
-  .testimonials-container,
-  .footer-columns {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+  .testimonials-container {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(80px,1fr)); 
+    gap:10px;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* gap: 20px; */
   }
 /*  */
   .card-box,
@@ -387,10 +401,12 @@
   .practice-cards,
   .expert-cards,
   .pricing-cards,
-  .testimonials-container,
-  .footer-columns {
-    justify-content: center;
+  .testimonials-container {
+    justify-content:center;
     gap: 30px;
+  }
+  .footer-columns {
+    justify-content: space-between;
   }
 
   .card-box,
@@ -439,8 +455,3 @@
   }
 }
 
-@media (min-width:481px)  {
-  label {
-    display: none;
-  }
-}
